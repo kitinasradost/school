@@ -27,17 +27,17 @@ public class Demo1Application {
                 Student student1 = new Student("Milek", 17, "milek@gmail.com");
 
                 try {
-                    em.getTransaction().begin();
-                    em.persist(student1);
-                    em.flush();
+                    entityManager.getTransaction().begin();
+                    entityManager.persist(student1);
+                    entityManager.flush();
 
-                    em.getTransaction().commit();
+                    entityManager.getTransaction().commit();
 
 
                 } catch (Exception e) {
-                    em.getTransaction().rollback();
+                    entityManager.getTransaction().rollback();
                 } finally {
-                    em.close();
+                    entityManager.close();
                 }
 
             }
