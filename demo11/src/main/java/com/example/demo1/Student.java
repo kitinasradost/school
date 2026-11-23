@@ -26,6 +26,7 @@ public class Student {
 
     @ManyToOne
     @JoinColumn(name = "group_id")
+    private StudentGroup studentGroup;
     protected Student() {
     }
 
