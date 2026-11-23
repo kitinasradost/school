@@ -5,8 +5,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table(name = "student_gruop")
-public class group {
+@Table(name = "student_group")
+public class StudentGroup {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -14,13 +14,11 @@ public class group {
 
     @Column(name = "title", nullable = false, length = 100)
     private String title;
-    private Student student;
 
-    public void setTeacher(Student student) {
-        
-        this.student = student;
+       protected StudentGroup() {
     }
-    public group(String title) {
+    
+    public StudentGroup(String title) {
         this.title = title;
     }
 
