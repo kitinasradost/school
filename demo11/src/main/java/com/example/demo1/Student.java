@@ -68,3 +68,11 @@ public class Student {
                 ", courses=" + age;
     }
 }
+
+
+
+///group_id näitab, millisesse gruppi üliõpilane kuulub.///
+
+///Andmeid ei salvestata lõplikult andmebaasi.///
+
+///JPA vajab seda, et luua objekti andmebaasi andmete põhjal.///
