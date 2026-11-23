@@ -25,8 +25,7 @@ public class Student {
 
 
     @ManyToOne
-    @JoinColumn(name = "student_id")
-    private Student teacher;
+    @JoinColumn(name = "group_id")
     protected Student() {
     }
 
@@ -37,9 +36,7 @@ public class Student {
 
     }
 
-    public void setTeacher(Student student) {
-        this.student = student;
-    }
+
 
     public void setName(String name) {
         this.name = name;
